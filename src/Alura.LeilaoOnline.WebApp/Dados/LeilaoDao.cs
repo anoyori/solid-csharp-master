@@ -9,9 +9,9 @@ namespace Alura.LeilaoOnline.WebApp.Dados
     {
         AppDbContext _context;
 
-        public LeilaoDao(AppDbContext context)
+        public LeilaoDao()
         {
-            _context = context;
+            _context = new AppDbContext();
         }
 
         public IEnumerable<Categoria> BuscarCategorias()
