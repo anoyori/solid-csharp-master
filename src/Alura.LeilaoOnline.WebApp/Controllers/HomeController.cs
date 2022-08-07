@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Alura.LeilaoOnline.WebApp.Dados;
+﻿using Alura.LeilaoOnline.WebApp.Dados.EfCore;
 using Alura.LeilaoOnline.WebApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Alura.LeilaoOnline.WebApp.Controllers
 {
