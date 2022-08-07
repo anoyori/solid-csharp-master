@@ -104,8 +104,7 @@ namespace Alura.LeilaoOnline.WebApp.Controllers
         public IActionResult Pesquisa(string termo)
         {
             ViewData["termo"] = termo;
-            var leiloes = _context.Leiloes
-                .Include(l => l.Categoria)
+            var leiloes = _dao.BuscarLeiloes()
                 .Where(l => string.IsNullOrWhiteSpace(termo) ||
                     l.Titulo.ToUpper().Contains(termo.ToUpper()) ||
                     l.Descricao.ToUpper().Contains(termo.ToUpper()) ||
