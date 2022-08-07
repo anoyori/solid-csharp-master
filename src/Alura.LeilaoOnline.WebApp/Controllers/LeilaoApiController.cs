@@ -1,5 +1,4 @@
-﻿using Alura.LeilaoOnline.WebApp.Dados.EfCore;
-using Alura.LeilaoOnline.WebApp.Dados.Interfaces;
+﻿using Alura.LeilaoOnline.WebApp.Dados.Interfaces;
 using Alura.LeilaoOnline.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
