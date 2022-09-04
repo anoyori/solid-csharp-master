@@ -5,11 +5,11 @@ namespace Alura.LeilaoOnline.WebApp.Dados.Interfaces
 {
     public interface ILeilaoDao
     {
-        IEnumerable<Categoria> BuscarCategorias();
+        IEnumerable<Categoria> ListarCategorias();
 
-        Leilao BuscarPorId(int id);
+        Leilao BuscarLeitaoPorId(int id);
 
-        IEnumerable<Leilao> BuscarLeiloes();
+        IEnumerable<Leilao> ListarLeiloes();
 
         void Incluir(Leilao leilao);
 

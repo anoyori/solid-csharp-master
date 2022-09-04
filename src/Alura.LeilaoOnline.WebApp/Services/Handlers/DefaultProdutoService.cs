@@ -39,7 +39,7 @@ namespace Alura.LeilaoOnline.WebApp.Services.Handlers
         public IEnumerable<Leilao> ConsultaCategoriaEmPregaoPorTermo(string termo)
         {
             var termoNormalized = termo.ToUpper();
-            return _dao.BuscarLeiloes()
+            return _dao.ListarLeiloes()
                 .Where(c =>
                     c.Titulo.ToUpper().Contains(termoNormalized) ||
                     c.Descricao.ToUpper().Contains(termoNormalized) ||
